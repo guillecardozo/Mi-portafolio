@@ -21,7 +21,7 @@ function Home2() {
               Analista en Tecnologías de la Información.
               
               <br />
-              <br />He aprendido a desarrollar en distintos lenguajes de progmración como
+              <br />He aprendido a desarrollar en distintos lenguajes de programación como
               <i>
                 <b className="purple"> C#, Javascript y Java. </b>
               </i>

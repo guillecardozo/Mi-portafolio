@@ -33,7 +33,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
-              isBlog={false}
+              isBlog={true}
               title="Comunidad Terápeutica Bethania"
               description="Página Web responsive desarrollada con HTML, CSS y Bootstrap para la Comunidad Terápeutica Bethania en Uruguay."
               demoLink="https://ctbethania.uy/"              

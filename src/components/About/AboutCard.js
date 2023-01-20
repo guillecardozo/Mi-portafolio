@@ -26,11 +26,6 @@ function AboutCard() {
               <ImPointRight /> Viajar
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "La verdad solo se puede encontrar en un lugar: <span className="purple">el código."</span>{" "}
-          </p>
-          <footer className="blockquote-footer">Robert C. Martin</footer>
         </blockquote>
       </Card.Body>
     </Card>

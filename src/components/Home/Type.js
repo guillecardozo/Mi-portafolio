@@ -7,6 +7,7 @@ function Type() {
       options={{
         strings: [
           "Desarrollador Full-Stack",
+          "La verdad solo se puede encontrar en un lugar: el código. - Robert C. Martin",
         ],
         autoStart: true,
         loop: true,
