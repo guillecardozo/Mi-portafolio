@@ -34,9 +34,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={true}
-              title="Comunidad Terápeutica Bethania"
-              description="Página Web responsive desarrollada con HTML, CSS y Bootstrap para la Comunidad Terápeutica Bethania en Uruguay."
-              demoLink="https://ctbethania.uy/"              
+              title="Comunidad Terapéutica Bethania"
+              description="Página Web responsive desarrollada con HTML, CSS y Bootstrap para la Comunidad Terapéutica Bethania en Uruguay."
+              ghLink="https://ctbethania.uy/"              
             />
           </Col>
 
