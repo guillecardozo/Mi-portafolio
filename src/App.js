@@ -5,6 +5,8 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
+import i18n from "./i18";
+import LocaleContext from "./LocaleContext";
 import {
   BrowserRouter as Router,
   Route,
@@ -18,6 +20,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
+  const [locale, setLocale] = useState(i18n.language);
+  i18n.on('languageChanged', (lng) => setLocale(i18n.language));
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -28,20 +32,22 @@ function App() {
   }, []);
 
   return (
+    <LocaleContext.Provider value={{locale, setLocale}}>
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+            <Route path="/"  element={<Home />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
     </Router>
+    </LocaleContext.Provider>
   );
 }
 

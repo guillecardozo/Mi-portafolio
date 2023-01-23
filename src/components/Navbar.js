@@ -6,6 +6,9 @@ import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import pdf from "../Assets/CV_Guillermo_Cardozo_Programador_Web.pdf";
 import Button from "react-bootstrap/Button";
+import LocaleContext from "../LocaleContext";
+import { useContext } from "react";
+import { NavDropdown } from "react-bootstrap";
 import i18n from "../i18";
 import {
   AiOutlineHome,
@@ -15,6 +18,7 @@ import {
 } from "react-icons/ai";
 
 function NavBar() {
+  const { locale } = useContext(LocaleContext);
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -23,6 +27,12 @@ function NavBar() {
       updateNavbar(true);
     } else {
       updateNavbar(false);
+    }
+  }
+
+  function changeLocale(l) {
+    if (locale !== l) {
+      i18n.changeLanguage(l);
     }
   }
 
@@ -101,9 +111,13 @@ function NavBar() {
                 </Button>
               </Nav.Link>
             </Nav.Item>
-          </Nav>
 
-          
+            <NavDropdown title={i18n.t('lenguaje')} id="basic-nav-dropdown">
+              <NavDropdown.Item href="#" onClick={() => changeLocale('es')}>Español</NavDropdown.Item>
+              <NavDropdown.Item href="#" onClick={() => changeLocale('en')}>English</NavDropdown.Item>
+            </NavDropdown>
+
+          </Nav>
 
         </Navbar.Collapse>
       </Container>

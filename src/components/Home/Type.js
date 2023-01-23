@@ -7,8 +7,7 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Desarrollador Full-Stack",
-          
+          i18n.t('typeDesarrollador'),
           i18n.t('typeFrase')
         ],
         autoStart: true,
