@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BsGithub } from "react-icons/bs";
+import i18n from "../../i18";
 
 function ProjectCards(props) {
   return (
@@ -14,7 +15,7 @@ function ProjectCards(props) {
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
-          {props.isBlog ? "Visitar Sitio" : "GitHub"}
+          {props.isBlog ? i18n.t('proyectosBotonVisitar') : "GitHub"}
         </Button>
         {"\n"}
         {"\n"}

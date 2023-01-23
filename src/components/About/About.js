@@ -5,6 +5,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import i18n from "../../i18";
 
 function About() {
   return (
@@ -21,7 +22,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple">¿Quién soy?</strong>
+              <strong className="purple">{i18n.t('aboutMeQuienSoy')}</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -34,13 +35,13 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Habilidades <strong className="purple">Profesionales </strong>
+        {i18n.t('aboutMeHabilidades')} <strong className="purple">{i18n.t('aboutMeProfesionales')} </strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Herramientas</strong> que uso
+          <strong className="purple">{i18n.t('aboutMeHerramientas')}</strong> {i18n.t('aboutMeQueUso')}
         </h1>
         <Toolstack />
 

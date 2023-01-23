@@ -7,6 +7,7 @@ import emotion from "../../Assets/Projects/call-center.PNG";
 import editor from "../../Assets/Projects/logoBethania.webp";
 import chatify from "../../Assets/Projects/react.PNG";
 import suicide from "../../Assets/Projects/vivero.PNG";
+import i18n from "../../i18";
 
 function Projects() {
   return (
@@ -14,18 +15,18 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Mis <strong className="purple">Proyectos </strong>
+        {i18n.t('proyectosTitulo')} <strong className="purple">{i18n.t('proyectosTitulo2')} </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Algunos proyectos reales y académicos que he desarrollado.
+        {i18n.t('proyectosSubtitulo')}
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Broker de Criptomonedas"
-              description="Proyecto académico desarrollado con React. La app es un broker de criptomonedas que se conecta con una API ficticia para realizar transacciones de compra y venta, obtener cotizaciones, realizar gráficos. También se aplica IA para saber en qué momento es mejor comprar o vender una moneda específica."
+              title= {i18n.t('proyectoBrokerTitulo')}
+              description={i18n.t('proyectoBrokerContent')}
               ghLink="https://github.com/guillecardozo/React"
             />
           </Col>
@@ -34,8 +35,8 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={true}
-              title="Comunidad Terapéutica Bethania"
-              description="Página Web responsive desarrollada con HTML, CSS y Bootstrap para la Comunidad Terapéutica Bethania en Uruguay."
+              title={i18n.t('proyectoBethaniaTitulo')}
+              description={i18n.t('proyectoBethaniaContent')}
               ghLink="https://ctbethania.uy/"              
             />
           </Col>
@@ -44,8 +45,8 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Actividades Culturales"
-              description="Proyecto académico desarrollado con C# y MVC. La app tiene una sección de Login y Registro que dependiendo del usuario que ingrese puede ver diferentes secciones, visualizar actividades y realizar compras de las mismas."
+              title={i18n.t('proyectoActividadesTitulo')}
+              description= {i18n.t('proyectoActividadesContent')}
               ghLink="https://github.com/guillecardozo/ObligatorioP2"
             />
           </Col>
@@ -54,8 +55,8 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Vivero de Plantas"
-              description="Proyecto académico desarrollado con C#, MVC, Entity Framework, SQL Server y LINQ. La app es para empleados de cualquier vivero donde pueden realizar las operaciones CRUD de las plantas, sus tipos y sus respectivas fichas de mantenimiento."
+              title={i18n.t('proyectoViveroTitulo')}
+              description={i18n.t('proyectoViveroContent')}
               ghLink="https://github.com/guillecardozo/ObligatorioP3Parte2"
             />
           </Col>
@@ -64,8 +65,8 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Simulador de Call-Center"
-              description="Proyecto académico desarrollado con Java. La app tiene una funcionalidad para empleados de un call center y otra para clientes, con un simulador de llamadas."
+              title={i18n.t('proyectoSimuladorTitulo')}
+              description={i18n.t('proyectoSimuladorContent')}
               ghLink="https://github.com/guillecardozo/ObligatorioDDA"
             />
           </Col>

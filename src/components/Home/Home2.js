@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
+import i18n from "../../i18";
 import {
   AiFillGithub,
 } from "react-icons/ai";
@@ -14,27 +15,23 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              DEJAME CONTARTE <span className="purple"> QUIEN </span> SOY
+            {i18n.t('home2DejameContarte')} <span className="purple"> {i18n.t('home2Quien')} </span> {i18n.t('home2Soy')}
             </h1>
             <p className="home-about-body">
-              Soy Programador Web y estudiante avanzado de la carrera
-              Analista en Tecnologías de la Información.
+            {i18n.t('home2Parrafo1')}
               
               <br />
-              <br />He aprendido a desarrollar en distintos lenguajes de programación como
+              <br />{i18n.t('home2Parrafo2')}
               <i>
-                <b className="purple"> C#, Javascript y Java. </b>
+                <b className="purple"> {i18n.t('home2Lenguajes')} </b>
               </i>
               <br />
               <br />
-              Trabajador detallista y resolutivo, buen colaborador que
-              prefiere el trabajo en equipo y de aprendizaje rápido.
-              Aporto una&nbsp;
+              {i18n.t('home2Parrafo3')}&nbsp;
               <i>
-                <b className="purple">actitud positiva </b> y la voluntad y motivación para
-              aprender{" "}
+                <b className="purple">{i18n.t('home2ActitudPostiva')} </b>{i18n.t('home2ContinuaParrafo3')}
                 <b className="purple">
-                nuevas tecnologías.
+                {i18n.t('home2NuevasTecnologias')}
                 </b>
               </i>
               <br />
@@ -49,7 +46,7 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>ME PUEDES ENCONTRAR EN</h1>
+            <h1>{i18n.t('home2Redes')}</h1>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -73,7 +70,7 @@ function Home2() {
               </li>
             </ul>
             <br></br>
-            <a href="mailto:guille.cardozo94@gmail.com">Contactame por mail a guille.cardozo94@gmail.com</a>
+            <a href="mailto:guille.cardozo94@gmail.com">{i18n.t('home2MailTo')}</a>
           </Col>
         </Row>
       </Container>

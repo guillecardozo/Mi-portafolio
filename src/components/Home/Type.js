@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import i18n from "../../i18";
 
 function Type() {
   return (
@@ -7,7 +8,8 @@ function Type() {
       options={{
         strings: [
           "Desarrollador Full-Stack",
-          '"La verdad solo se puede encontrar en un lugar: el código." - Robert C. Martin',
+          
+          i18n.t('typeFrase')
         ],
         autoStart: true,
         loop: true,

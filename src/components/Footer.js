@@ -4,6 +4,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import i18n from "../i18";
 
 function Footer() {
   let date = new Date();
@@ -12,7 +13,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Diseñado y desarrollado por Guillermo Cardozo</h3>
+          <h3>{i18n.t('footer')}</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} GC</h3>

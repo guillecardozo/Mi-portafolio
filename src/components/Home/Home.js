@@ -4,6 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import i18n from '../../i18';
 
 function Home() {
   return (
@@ -14,14 +15,14 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Bienvenid@s!{" "}
+              {i18n.t('bienvenidos')}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                SOY
+              {i18n.t('soy')}
                 <strong className="main-name"> GUILLERMO CARDOZO</strong>
               </h1>
 

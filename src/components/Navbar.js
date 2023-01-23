@@ -6,6 +6,7 @@ import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import pdf from "../Assets/CV_Guillermo_Cardozo_Programador_Web.pdf";
 import Button from "react-bootstrap/Button";
+import i18n from "../i18";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -62,7 +63,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Acerca de mí
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {i18n.t('navAcercaDeMi')}
               </Nav.Link>
             </Nav.Item>
 
@@ -75,7 +76,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Proyectos
+                {i18n.t('navProyectos')}
               </Nav.Link>
             </Nav.Item>
 
@@ -88,7 +89,7 @@ function NavBar() {
                 target="_blank"
                 onClick={() => updateExpanded(false)}
               >
-                 <Button
+                <Button
                   variant="primary"
                   href={pdf}
                   download="CV_Guillermo_Cardozo_Programador_Web.pdf"
@@ -96,11 +97,14 @@ function NavBar() {
                   style={{ maxWidth: "250px" }}
                 >
                   <AiOutlineDownload />
-                  &nbsp;Descargar CV
+                  &nbsp;{i18n.t('navDescargar')}
                 </Button>
               </Nav.Link>
             </Nav.Item>
           </Nav>
+
+          
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
