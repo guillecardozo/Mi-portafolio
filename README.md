@@ -3,7 +3,7 @@
   <a href="https://guillermo-cardozo-portfolio.web.app/" target="_blank">Guillermo Cardozo - Portfolio</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./vistas.png" />
+  <img alt="Demo" src="./demo.png" />
 </div>
 
 <center>
@@ -35,7 +35,7 @@ This project was built using these technologies.
 
 **📱 Fully Responsive**
 
-** Change Language**
+:star: Change Language
 
 ## Getting Started
 
