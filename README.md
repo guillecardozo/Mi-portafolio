@@ -35,7 +35,7 @@ This project was built using these technologies.
 
 **📱 Fully Responsive**
 
-** Change Language**
+:star: Change Language
 
 ## Getting Started
 
