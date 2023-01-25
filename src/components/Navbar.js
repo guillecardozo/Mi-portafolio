@@ -8,8 +8,10 @@ import pdf from "../Assets/CV_Guillermo_Cardozo_Programador_Web.pdf";
 import Button from "react-bootstrap/Button";
 import LocaleContext from "../LocaleContext";
 import { useContext } from "react";
-import { NavDropdown } from "react-bootstrap";
 import i18n from "../i18";
+import en from "../Assets/english.png";
+import es from "../Assets/spanish.png"
+import { Trans } from "react-i18next";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -111,11 +113,14 @@ function NavBar() {
                 </Button>
               </Nav.Link>
             </Nav.Item>
-
-            <NavDropdown title={i18n.t('lenguaje')} id="basic-nav-dropdown">
-              <NavDropdown.Item href="#" onClick={() => changeLocale('es')}>Español</NavDropdown.Item>
-              <NavDropdown.Item href="#" onClick={() => changeLocale('en')}>English</NavDropdown.Item>
-            </NavDropdown>
+          
+            <Nav.Link 
+              href="#" onClick={() => changeLocale('es')}>
+              <img className="flag" src={es} alt="English flag" /><Trans> Español</Trans>
+            </Nav.Link >
+            <Nav.Link href="#" onClick={() => changeLocale('en')}>
+              <img className="flag" src={en} alt="Spanish flag" /><Trans> English</Trans>
+            </Nav.Link >
 
           </Nav>
 
