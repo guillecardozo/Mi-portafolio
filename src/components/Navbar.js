@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
-import pdf from "../Assets/CV_Guillermo_Cardozo_Programador_Web.pdf";
+import pdf from "../Assets/CV_Guillermo_Cardozo_Desarrollador.pdf";
 import Button from "react-bootstrap/Button";
 import LocaleContext from "../LocaleContext";
 import { useContext } from "react";
@@ -93,25 +93,16 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="../Assets/CV_Guillermo_Cardozo_Programador_Web.pdf"
-                href={pdf}
-                download="CV_Guillermo_Cardozo_Programador_Web.pdf"
-                target="_blank"
-                onClick={() => updateExpanded(false)}
-              >
                 <Button
                   variant="primary"
                   href={pdf}
-                  download="CV_Guillermo_Cardozo_Programador_Web.pdf"
+                  download="CV_Guillermo_Cardozo_Desarrollador.pdf"
                   target="_blank"
                   style={{ maxWidth: "250px" }}
                 >
                   <AiOutlineDownload />
                   &nbsp;{i18n.t('navDescargar')}
                 </Button>
-              </Nav.Link>
             </Nav.Item>
           
             <Nav.Link 
