@@ -4,7 +4,8 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiIntellijidea,
-  SiMicrosoftsqlserver
+  SiMicrosoftsqlserver,
+  SiGithub
 } from "react-icons/si";
 
 function Toolstack() {
@@ -21,6 +22,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="SQL Server">
         <SiMicrosoftsqlserver />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="GitHub">
+        <SiGithub />
       </Col>
     </Row>
   );
