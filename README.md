@@ -35,7 +35,7 @@ Este proyecto fue desarrollado usando estas tecnologías:
 
 **📱 Totalmente Responsiva**
 
-:star: Lenguajes Español e Inglés disponibles
+**:star: Lenguajes Español e Inglés disponibles**
 
 ## Empezando
 
