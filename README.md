@@ -14,11 +14,11 @@
 
 </center>
 
-## Built With
+## Desarrollado con
 
-My personal portfolio <a href="https://guillermo-cardozo-portfolio.web.app/" target="_blank">Guillermo Cardozo - Portfolio</a> which features some of my github projects as well as my resume and technical skills.<br/>
+Mi portafolio personal <a href="https://guillermo-cardozo-portfolio.web.app/" target="_blank">Guillermo Cardozo - Portfolio</a> presenta algunos de mis proyectos de GitHub, así como mi currículum y habilidades técnicas.<br/>
 
-This project was built using these technologies.
+Este proyecto fue desarrollado usando estas tecnologías:
 
 - React.js
 - Node.js
@@ -27,35 +27,34 @@ This project was built using these technologies.
 - VsCode
 - Vercel
 
-## Features
+## Características
 
 **📖 Multi-Page Layout**
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+**🎨 Diseñado con React-Bootstrap y CSS con colores fáciles de personalizar**
 
-**📱 Fully Responsive**
+**📱 Totalmente Responsiva**
 
-:star: Change Language
+:star: Lenguajes Español e Inglés disponibles
 
-## Getting Started
+## Empezando
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+Clonar este repositorio. Vas a necesitar `node.js` y `git` instalados globalmente en tu PC.
 
-## 🛠 Installation and Setup Instructions
+## 🛠 Instalación y configuraciones
 
-1. Installation: `npm install` or if not working `npm install --legacy-peer-deps`
+1. Instalación: `npm install` o si da error usar `npm install --legacy-peer-deps`
 
-2. In the project directory, you can run: `npm start`
+2. En la carpeta donde se encuentra el proyecto, ejecutar `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+Ejecuta la aplicación en el modo de desarrollo.\
+Abrir [http://localhost:3000](http://localhost:3000) para visualizarlo en el navegador.
+La página se recargará cuando hayan cambios.
 
-## Usage Instructions
+## Instrucciones de uso
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
+Abrir la carpeta del proyecto con VSCode y navegar a `/src/components/`. <br/>
+Encontraras todos los componentes utilizados y podrás editar la información.
+En `/src/locales/` verás 2 carpetas y dentro de estas están los archivos .json que contienen todos los strings en ambos idiomas, es en estos archivos donde debes editar la información.
 
-### Show your support
-
-Give a ⭐ if you like this website!
+### Ayudame con una ⭐ si te gustó el proyecto!
