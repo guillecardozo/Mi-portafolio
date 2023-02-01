@@ -1,5 +1,5 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
+  Portfolio Website - v2.1.0<br/>
   <a href="https://guillermo-cardozo-portfolio.web.app/" target="_blank">Guillermo Cardozo - Portfolio</a>
 </h2>
 <div align="center">
